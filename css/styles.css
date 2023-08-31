@@ -42,7 +42,7 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 189, 93, 56;
+  --bs-primary-rgb: 47, 134, 222;
   --bs-secondary-rgb: 108, 117, 125;
   --bs-success-rgb: 25, 135, 84;
   --bs-info-rgb: 13, 202, 240;
@@ -73,8 +73,8 @@
   --bs-border-radius-xl: 1rem;
   --bs-border-radius-2xl: 2rem;
   --bs-border-radius-pill: 50rem;
-  --bs-link-color: #bd5d38;
-  --bs-link-hover-color: #974a2d;
+  --bs-link-color: #2f86de;
+  --bs-link-hover-color: #2566a8;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fff3cd;
 }
@@ -6658,7 +6658,7 @@ textarea.form-control-lg {
 
 .text-bg-primary {
   color: #000 !important;
-  background-color: RGBA(189, 93, 56, var(--bs-bg-opacity, 1)) !important;
+  background-color: RGBA(43, 204, 72, var(--bs-bg-opacity, 1)) !important;
 }
 
 .text-bg-secondary {
@@ -10862,7 +10862,6 @@ p.lead {
 
 .subheading {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 1.5rem;
 }
@@ -10937,7 +10936,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #2566a8;
 }
 
 .dev-icons {

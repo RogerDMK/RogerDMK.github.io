@@ -15,6 +15,12 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <style>
+            img {
+              width: 118%;
+              height: auto;
+            }
+            </style>
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -53,8 +59,7 @@
                     <div class="social-icons">
                         <a class="social-icon" href="https://www.linkedin.com/in/roger-de-mello-koch-771553164/"><i class="fab fa-linkedin-in"></i></a>
                         <a class="social-icon" href="https://github.com/RogerDMK"><i class="fab fa-github"></i></a>
-                        <!-- <a class="social-icon" href="#!"><i class="fab fa-twitter"></i></a>
-                        <a class="social-icon" href="#!"><i class="fab fa-facebook-f"></i></a> -->
+                        <a class="social-icon" href="assets/files/Roger_de_mello_koch_Resume.pdf" target="_blank"><i class="fa fa-file-pdf"></i></a>
                     </div>
                 </div>
             </section>
@@ -115,7 +120,7 @@
             <section class="resume-section" id="skills">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Skills</h2>
-                    <div class="subheading mb-3">Programming Languages</div>
+                    <div class="subheading mb-3">Programming languages</div>
                     <p>Experience with C++ , Python, JavaScript as well as 
                         NodeJS, bash, assembly, and MatLab. In addition I have experience setting up and operating Unix based systems on computer systems and computer clusters, specifically Centos and Ubuntu. </p>
                     <i class="devicon-cplusplus-plain colored"></i>
@@ -124,7 +129,12 @@
                     <i class="devicon-nodejs-plain-wordmark colored"></i>
                     <i class="devicon-bash-plain colored"></i>
                     <i class="devicon-matlab-plain colored"></i>
-                    
+
+                    <div class="subheading mb-3">Electrical engineering centric skills</div>
+                    During my electrical engineering degree I learned how to design electronic circuits and control systems.
+                    I am proficient in signal processing and filtering and have an understanding of the underlying mathematical representation.
+                    This is due to my strong understanding of linear algebra, specifically within the Fourier space.
+                    The development of these skills have given me a unique training and experience in problem solving and critical thinking, even in situations where the practical skills from engineering are not relevant my problem solving and critical thinking remain to be relevant.
                 </div>
             </section>
             <hr class="m-0" />
@@ -153,7 +163,24 @@
             <section class="resume-section" id="awards">
                 <div class="resume-section-content">
                     <h2 class="mb-5">Fun Projects</h2>
-                    I should really add stuff here!
+                    <div class="subheading mb-3">Wildfire prediction map</div>
+                    My final project during my electrical engineering degree required students to solve a unique problem in groups of 2, acting as a small research project.
+                    I used a dataset derived from the MODIS Satellite to generate a wildfire prediction map using machine learning techniques.
+                    Each map shows the probability of a fire occurring the next day for the Southern African region.
+                    The tool developed uses a support vector machine to predict a thermal anomaly based on the land surface temperature and normalized difference vegetation index measured by the satellite.
+                    The final tool obtained an F1-score of 84% and could be used to generate a confidence map to better visualize the predicted outcome.
+                    <div class="d-flex flex-column flex-md-row justify-content-between" style="column-gap: 30px">
+                        <div>
+                    <div class="subheading mb-4">Example of the model output</div>
+                    <video width="580px" height="358px" controls="controls">
+                    <source src="assets/vid/ezgif.com-crop.mp4" />        
+                        </div>
+                        <div>
+                            <div class="subheading mb-4">Region studied</div>
+                            <img src="assets/img/south_africa.png" alt="Southern Africa region">
+                        </div>
+                    </div>
+                    
                 </div>
             </section>
         </div>

@@ -35,28 +35,23 @@ window.addEventListener('DOMContentLoaded', event => {
 
 var imageProfile = document.getElementById("profile-image");
 $(window).bind('scroll', function() {
-    if($(window).scrollTop() <= $('#about').offset().top) {
+    let windowPlace = $(window).scrollTop() + 250;
+    if(windowPlace <= $('#experience').offset().top) {
         imageProfile.src = "assets/img/profile.jpg";
-        console.log("About");
     }
-    else if($(window).scrollTop() <= $('#experience').offset().top) {
+    else if(windowPlace <= $('#education').offset().top) {
         imageProfile.src = "assets/img/profile.jpg";
-        console.log("Experience");
     }
-    else if($(window).scrollTop() <= $('#education').offset().top) {
+    else if(windowPlace <= $('#skills').offset().top) {
         imageProfile.src = "assets/img/ConstructionMe.png";
-        console.log("Education");
     }
-    else if($(window).scrollTop() <= $('#skills').offset().top) {
+    else if(windowPlace <= $('#interests').offset().top) {
         imageProfile.src = "assets/img/profile.jpg";
-        console.log("Skills");
     }
-    else if($(window).scrollTop() <= $('#interests').offset().top) {
+    else if(windowPlace <= $('#awards').offset().top) {
         imageProfile.src = "assets/img/profile.jpg";
-        console.log("Interests");
     }
     else{
         imageProfile.src = "assets/img/ConstructionMe.png";
-        console.log("FunStuff");
     }
 });

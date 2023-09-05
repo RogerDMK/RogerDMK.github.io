@@ -32,3 +32,25 @@ window.addEventListener('DOMContentLoaded', event => {
     });
 
 });
+
+var imageProfile = document.getElementById("profile-image");
+$(window).bind('scroll', function() {
+    if($(window).scrollTop() <= $('#about').offset().top) {
+        imageProfile.src = "assets/img/profile.jpg";
+    }
+    else if($(window).scrollTop() <= $('#experience').offset().top) {
+        imageProfile.src = "assets/img/profile.jpg";
+    }
+    else if($(window).scrollTop() <= $('#education').offset().top) {
+        imageProfile.src = "assets/img/ConstructionMe.png";
+    }
+    else if($(window).scrollTop() <= $('#skills').offset().top) {
+        imageProfile.src = "assets/img/profile.jpg";
+    }
+    else if($(window).scrollTop() <= $('#interests').offset().top) {
+        imageProfile.src = "assets/img/profile.jpg";
+    }
+    else{
+        imageProfile.src = "assets/img/ConstructionMe.png";
+    }
+});

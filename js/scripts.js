@@ -7,6 +7,28 @@
 // Scripts
 // 
 
+window.addEventListener("load", (event) => {
+    let windowPlace = $(window).scrollTop() + 250;
+    if(windowPlace <= $('#education').offset().top) {
+        imageProfile.src = "assets/img/profile.jpg";
+    }
+    else if(windowPlace <= $('#experience').offset().top) {
+        imageProfile.src = "assets/img/educ.jpg";
+    }
+    else if(windowPlace <= $('#skills').offset().top) {
+        imageProfile.src = "assets/img/dino2.jpg";
+    }
+    else if(windowPlace <= $('#interests').offset().top) {
+        imageProfile.src = "assets/img/turtle2.jpg";
+    }
+    else if(windowPlace <= $('#awards').offset().top) {
+        imageProfile.src = "assets/img/hiking.jpg";
+    }
+    else{
+        imageProfile.src = "assets/img/ConstructionMe.png";
+    }
+  });
+
 window.addEventListener('DOMContentLoaded', event => {
 
     // Activate Bootstrap scrollspy on the main nav element
@@ -36,20 +58,20 @@ window.addEventListener('DOMContentLoaded', event => {
 var imageProfile = document.getElementById("profile-image");
 $(window).bind('scroll', function() {
     let windowPlace = $(window).scrollTop() + 250;
-    if(windowPlace <= $('#experience').offset().top) {
+    if(windowPlace <= $('#education').offset().top) {
         imageProfile.src = "assets/img/profile.jpg";
     }
-    else if(windowPlace <= $('#education').offset().top) {
-        imageProfile.src = "assets/img/profile.jpg";
+    else if(windowPlace <= $('#experience').offset().top) {
+        imageProfile.src = "assets/img/educ.jpg";
     }
     else if(windowPlace <= $('#skills').offset().top) {
-        imageProfile.src = "assets/img/ConstructionMe.png";
+        imageProfile.src = "assets/img/dino2.jpg";
     }
     else if(windowPlace <= $('#interests').offset().top) {
-        imageProfile.src = "assets/img/profile.jpg";
+        imageProfile.src = "assets/img/turtle2.jpg";
     }
     else if(windowPlace <= $('#awards').offset().top) {
-        imageProfile.src = "assets/img/profile.jpg";
+        imageProfile.src = "assets/img/hiking.jpg";
     }
     else{
         imageProfile.src = "assets/img/ConstructionMe.png";
